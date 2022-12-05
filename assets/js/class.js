@@ -1,12 +1,21 @@
 class studentName {
-  constructor(name) {
+  #pin;
+  constructor(name,pin) {
     this.name = name;
+    this.#pin = pin;
   }
 
   hello() {
     return `hello! ${this.name}`;
   }
+
+  specialDetails() {
+    return this.#pin;
+  }
 }
+
+const stu = new studentName('saif','1234');
+console.log(stu.pin);
 
 
 class student extends studentName {
