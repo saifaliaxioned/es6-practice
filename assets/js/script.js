@@ -70,22 +70,47 @@ let arr = [1, 2, 3, 4, 5];
 
 let d = 4;
 
-const rotateFunc = (arr, d) => {
-  let newArr = [];
-  if (d <= arr.length) {
-    for (let i = 0; i < d; i++) {
-      newArr.push(arr.shift(i));
-      // console.log(newArr);
-      // console.log(arr);
-    }
-    let result = [...arr,...newArr];
-    console.log(result);
-  } else {
-    console.log('err');
+// const rotateFunc = (arr, d) => {
+//   let newArr = [];
+//   if (d <= arr.length) {
+//     for (let i = 0; i < d; i++) {
+//       newArr.push(arr.shift(i));
+//       // console.log(newArr);
+//       // console.log(arr);
+//     }
+//     let result = [...arr,...newArr];
+//     console.log(result);
+//   } else {
+//     console.log('err');
+//   }
+// }
+// rotateFunc(arr, d);
+
+// const reverseFunc = (arr) => {
+//   let temp = [];
+//   for (let i = arr.length; i > 0; i--) {
+//     temp.push(i);
+//   }
+//   console.log(temp);
+// }
+// reverseFunc(arr);
+
+// const linkArr = [2,16,13];
+
+
+
+// linkedlist
+class List {
+  constructor(data) {
+    this.head = {
+      value: data,
+      next: null,
+    };
+    this.tail = this.head;
   }
 }
-rotateFunc(arr, d);
-
+let list = new List(200);
+console.log(list);
 
 
 
